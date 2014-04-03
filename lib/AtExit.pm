@@ -254,22 +254,19 @@ Michael A. Chase E<lt>mchase@ix.netcom.comE<gt> (Version 2.00).
 
 =cut
 
-use vars qw( $VERSION
-             @ISA
-             @EXPORT
-             @EXPORT_OK
+use vars qw(
              @EXIT_SUBS
              $EXITING
              $IGNORE_WHEN_EXITING
            );
 
 use strict;
-#use diagnostics;
+use warnings;
 use Exporter;
 
-@ISA    = qw( Exporter );
-@EXPORT = qw( atexit rmexit );
-@EXPORT_OK = qw( atexit rmexit exit_subs is_exiting ignore_when_exiting );
+our @ISA    = qw( Exporter );
+our @EXPORT = qw( atexit rmexit );
+our @EXPORT_OK = qw( atexit rmexit exit_subs is_exiting ignore_when_exiting );
 
 ## Class/Package-level exit attrs
 my %EXIT_ATTRS = (

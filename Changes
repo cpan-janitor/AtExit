@@ -6,6 +6,7 @@ Release history for Perl module AtExit
     - Moved AtExit.pm to lib/AtExit.pm
     - Added COPYRIGHT AND LICENSE section to pod
     - Added this Changes file
+    - Added "use warnings"
 
 2.01 1998-10-20
     - rmexit may now be called (as a function or a method) with *no* arguments.
