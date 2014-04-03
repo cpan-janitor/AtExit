@@ -9,13 +9,14 @@
 
 package AtExit;
 
+# ABSTRACT: perform exit processing for a program or object
+
 require 5.002;
 
-$VERSION = 2.01;
 
 =head1 NAME
 
-B<atexit>, B<AtExit> -- perform exit processing for a program or object
+AtExit - perform exit processing for a program or object
 
 =head1 SYNOPSIS
 
