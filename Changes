@@ -4,6 +4,7 @@ Release history for Perl module AtExit
     - Created testsuite based on old test script
     - Switched to Dist::Zilla
     - Moved AtExit.pm to lib/AtExit.pm
+    - Added COPYRIGHT AND LICENSE section to pod
     - Added this Changes file
 
 2.01 1998-10-20

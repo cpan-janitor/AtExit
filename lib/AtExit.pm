@@ -237,6 +237,13 @@ L<perlref>.  For more information on C<END{}> blocks, see
 L<perlmod/"Package Constructors and Destructors">.  See
 L<perlvar/"%SIG{expr}"> for handling abnormal program termination.
 
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 1996 by Brad Appleton.
+
+This is free software; you can redistribute it and/or modify it under
+the terms of the Artistic License 1.0.
+
 =head1 AUTHOR
 
 Andrew Langmead E<lt>aml@world.std.comE<gt> (initial draft).
