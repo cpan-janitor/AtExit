@@ -1,6 +1,7 @@
 Release history for Perl module AtExit
 
 2.01_01 2014-04-03
+    - Moved AtExit.pm to lib/AtExit.pm
     - Added this Changes file
 
 2.01 1998-10-20
