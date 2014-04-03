@@ -1,6 +1,6 @@
-Changes      -- Change log for this distribution
-README       -- This file
-MANIFEST     -- This shipping list
-Makefile.PL  -- Perl Makefile template
-AtExit.pm    -- The AtExit module source
-test.pl      -- Simple test script for AtExit.pm
+Changes         -- Change log for this distribution
+README          -- This file
+MANIFEST        -- This shipping list
+Makefile.PL     -- Perl Makefile template
+lib/AtExit.pm   -- The AtExit module source
+test.pl         -- Simple test script for AtExit.pm

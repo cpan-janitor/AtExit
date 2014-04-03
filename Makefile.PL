@@ -11,7 +11,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     NAME         => "AtExit",
     DISTNAME     => "AtExit",
-    VERSION_FROM => "AtExit.pm",
+    VERSION_FROM => 'lib/AtExit.pm',
     SKIP         => [qw(static dynamic)],
     linkext      => {LINKTYPE => ''},
     INSTALLDIRS  => 'perl',
