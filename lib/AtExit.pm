@@ -237,6 +237,26 @@ L<perlref>.  For more information on C<END{}> blocks, see
 L<perlmod/"Package Constructors and Destructors">.  See
 L<perlvar/"%SIG{expr}"> for handling abnormal program termination.
 
+The following modules all provide similar capability:
+L<Scope::OnExit>,
+L<Scope::Cleanup>,
+L<Scope::Guard>,
+L<Guard>,
+L<End>,
+L<Perl::AtEndOfScope>,
+L<ReleaseAction>,
+L<Scope::local_OnExit>,
+L<Sub::ScopeFinalizer>.
+
+L<Hook::Scope> provides a similar capability, but it failed to install for me,
+and was last released in 2003.
+
+L<Value::Canary> lets you provide code to be invoked when a value
+is destroyed.
+
+L<B::Hooks::EndOfScope> will execute your code after the scope finishes
+I<compiling>.
+
 =head1 COPYRIGHT AND LICENSE
 
 This software is copyright (c) 1996 by Brad Appleton.
