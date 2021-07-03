@@ -2,6 +2,7 @@ Release history for Perl module AtExit
 
 2.05 2021-07-03 NEILB
     - Include META.json in releases
+    - Switch to github issues for bug tracker
 
 2.04 2021-05-19 NEILB
     - Made all mentions of licence consistent with the statement
