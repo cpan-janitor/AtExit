@@ -3,8 +3,8 @@
 #
 # Copyright (c) 1996 Andrew Langmead. All rights reserved.
 # This file is part of "AtExit". AtExit is free software;
-# you can redistribute it and/or modify it under the same
-# terms as Perl itself.
+# This is free software; you can redistribute it and/or modify it under
+# the terms of the Artistic License 1.0.
 ##############################################################################
 
 package AtExit;
@@ -256,6 +256,10 @@ is destroyed.
 
 L<B::Hooks::EndOfScope> will execute your code after the scope finishes
 I<compiling>.
+
+=head1 REPOSITORY
+
+L<https://github.com/neilb/AtExit>
 
 =head1 COPYRIGHT AND LICENSE
 

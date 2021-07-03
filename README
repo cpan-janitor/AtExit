@@ -1,4 +1,6 @@
 
+    AtExit Perl 5 module
+
  WHAT IS THIS?
  =============
  This is "AtExit", a Perl5 module which exports a function name "atexit()"
@@ -15,6 +17,7 @@
 
  Michael A. Chase <mchase@ix.netcom.com> (Version 2.00).
 
+ Currently being maintained by Neil Bowers <neilb@cpan.org>.
 
  COPY/REUSE POLICY
  =================
@@ -61,97 +64,3 @@
  Please refer to the Artistic License that came with your Perl
  distribution for more details.
 
-
- CONTENTS
- ========
- Please see the file named "MANIFEST" which should have been included
- in the AtExit distribution.
-
-
- REQUIREMENTS
- ============
- * Perl version 5.002 or later
-
-
- BUILDING & INSTALLING
- =====================
- Please see the perl "ExtUtils::MakeMaker" manpage for how to build and
- install using the Makefile.PL template.  In a nutshell, simply typing:
-
-      perl Makefile.PL
-
- should build a Makefile with the usual targets like "all", "clean",
- "test", and "install".
-
-
- BUGS
- ====
- Please send all bug reports to Brad Appleton <bradapp@enteract.com>
-
-
- HISTORY
- =======
- 19-Jan-1999           Brad Appleton               <bradapp@enteract.com>
- -----------------------------------------------------------------------------
- Version 2.01
- - rmexit may now be called (as a function or a method) with *no* arguments.
-   When this happens, *all* exit-handlers are removed!
-
-
- 18-Oct-1998           Brad Appleton               <bradapp@enteract.com>
- -----------------------------------------------------------------------------
- Version 2.00
- Made the following changes based on patches contributed by Michael Chase
- - AtExit may now be used as a class to create objects which invoke callbacks
-   whenever the AtExit object is destroyed (or goes out of scope with no
-   other references to it).
-
- - atexit() amd rmexit() may now be invoked as functions, or as methods.
-   When invoked as methods, they operate on an object for destruction-time
-   callbacks. Otherwise they operate on the program for program-exit-time
-   callbacks.
-
- - Added the exit_subs(), is_exiting() and ignore_when_exiting() subroutines
-   to replace the use of @AtExit::EXIT_SUBS, $AtExit::EXITING, and
-   $AtExit::IGNORE_WHEN_EXITING. Use of these three variables is now
-   deprecated in favor of these new subroutines.
-
-   Although atexit & rmexit are still exported (for backward compatibility),
-   exit_subs(), is_exiting() and ignore_when_exiting() are NOT exported
-   by default.
-
- - $AtExit::EXITING, $AtExit::IGNORE_WHEN_EXITING, and @AtExit::EXIT_SUBS
-   are now merely aliases to a class hash/object.
-
-
- 04-Sep-1996           Brad Appleton               <bradapp@enteract.com>
- -----------------------------------------------------------------------------
- Version 1.02
- - Added the rmexit() function to unregister subroutines if desired.
- - Added $EXITING and $IGNORE_WHEN_EXITING variables to control behavior
-   of atexit() during exit-processing.
- - Tested and documented the behavior of atexit() during exit-processing.
-
- 02-Sep-1996           Brad Appleton               <bradapp@enteract.com>
- -----------------------------------------------------------------------------
- Version 1.01
- - Some minor changes to documentation and variable names at the request
-   of some comp.lang.perl.modules readers.
-
- 27-Aug-1996           Brad Appleton               <bradapp@enteract.com>
- -----------------------------------------------------------------------------
- Version 1.00 posted to comp.lang.perl.modules to garner feedback, and
- to see if the module was too trivial to merit placing on CPAN.
- - Added sections to the manpage as recommended by Andrew Langmead.
- - Convert "soft-refs" to subs into "hard-refs" at Andrew's recommendation.
- - Added exit-handler arguments to atexit() at Andrew's recommendation.
- - Changed atexit() to return a sub-ref (instead of nothing).
-
- 26-Aug-1996           Brad Appleton               <bradapp@enteract.com>
- -----------------------------------------------------------------------------
- Polished up a bit for production and added documentation. Sent the result
- to Andrew Langmead for his comments and approval.
-
- 22-Aug-1996           Andrew Langmead             <aml@world.std.com>
- -----------------------------------------------------------------------------
- Initial version created.

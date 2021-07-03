@@ -1,5 +1,13 @@
 Release history for Perl module AtExit
 
+2.04 2021-05-19 NEILB
+    - Made all mentions of licence consistent with the statement
+      in the documentation. RT#132447 from KENTNL.
+
+2.03 2015-10-25 NEILB
+    - Trimmed down the README and moved some of the history into Changes
+    - Updated github repo URL after changing my github username
+
 2.02 2014-04-06
     - Added a whole load of modules to SEE ALSO.
 
@@ -11,7 +19,7 @@ Release history for Perl module AtExit
     - Added this Changes file
     - Added "use warnings"
 
-2.01 1998-10-20
+2.01 1999-01-20 BRADAPP
     - rmexit may now be called (as a function or a method) with *no* arguments.
       When this happens, *all* exit-handlers are removed!
 
@@ -42,6 +50,8 @@ Release history for Perl module AtExit
       of some comp.lang.perl.modules readers.
 
 1.00 1996-08-27 @bradapp
+    - Initial version was created by Andrew Langmead, then worked on
+      by Brad Appleton for release to CPAN.
     - posted to comp.lang.perl.modules to garner feedback, and
       to see if the module was too trivial to merit placing on CPAN.
     - Added sections to the manpage as recommended by Andrew Langmead.
