@@ -13,10 +13,10 @@ Release history for Perl module AtExit
     - Trimmed down the README and moved some of the history into Changes
     - Updated github repo URL after changing my github username
 
-2.02 2014-04-06
+2.02 2014-04-06 NEILB
     - Added a whole load of modules to SEE ALSO.
 
-2.01_01 2014-04-03
+2.01_01 2014-04-03 NEILB
     - Created testsuite based on old test script
     - Switched to Dist::Zilla
     - Moved AtExit.pm to lib/AtExit.pm
@@ -28,7 +28,7 @@ Release history for Perl module AtExit
     - rmexit may now be called (as a function or a method) with *no* arguments.
       When this happens, *all* exit-handlers are removed!
 
-2.00 1998-10-20 @bradapp
+2.00 1998-10-20 BRADAPP
     - Made the following changes based on patches contributed by Michael Chase
     - AtExit may now be used as a class to create objects which invoke callbacks
       whenever the AtExit object is destroyed (or goes out of scope with no
@@ -47,14 +47,14 @@ Release history for Perl module AtExit
     - $AtExit::EXITING, $AtExit::IGNORE_WHEN_EXITING, and @AtExit::EXIT_SUBS
       are now merely aliases to a class hash/object.
 
-1.02 1996-09-05 @bradapp
+1.02 1996-09-05 BRADAPP
     - First release to CPAN
 
-1.01 1996-09-02 @bradapp
+1.01 1996-09-02 BRADAPP
     - Some minor changes to documentation and variable names at the request
       of some comp.lang.perl.modules readers.
 
-1.00 1996-08-27 @bradapp
+1.00 1996-08-27 BRADAPP
     - Initial version was created by Andrew Langmead, then worked on
       by Brad Appleton for release to CPAN.
     - posted to comp.lang.perl.modules to garner feedback, and
